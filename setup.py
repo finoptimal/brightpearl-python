@@ -7,7 +7,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-VERSION = '0.1'
+VERSION = '0.11'
 
 setup(
     name='brightpearl',
@@ -15,11 +15,14 @@ setup(
 
     packages=find_packages(),
 
-    url='https://github.com/demystify-systems/brightpearl-python',
-
-    author='Demystify Systems',
-    author_email='prod@dmstfy.com',
-
+    # Forked from:
+    #url='https://github.com/demystify-systems/brightpearl-python',
+    url="https://github.com/finoptimal/brightpearl-python", 
+    # Original:
+    #author='Demystify Systems',
+    #author_email='prod@dmstfy.com',
+    author="FinOptimal",
+    author_email="developer@finoptimal.com",
     description='Python client library for Brightpearl API : https://www.brightpearl.com',
     long_description=read('README.md'),
     license='MIT',
